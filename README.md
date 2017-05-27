@@ -10,7 +10,7 @@ find . -type f -exec sed -i 's/your.registry.fqdn/your.registry.fqdn/g' {} +
 ```
 3. Create certs
 ```bash
-certbot certonly --agree-tos --standalone -d our.registry.fqdn --email admin@registry.fqdn
+certbot certonly --agree-tos --standalone -d your.registry.fqdn --email admin@registry.fqdn
 cp /etc/letsencrypt/live/your.registry.fqdn/* /docker/docker-registry-portus/certs/ 
 ```
 3. Tune mail config in `portus/config-local.yml`
