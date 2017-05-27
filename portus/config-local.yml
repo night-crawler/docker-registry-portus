@@ -1,0 +1,20 @@
+display_name:
+  enabled: true
+machine_fqdn:
+  value: "your.registry.fqdn"
+signup:
+  enabled: false
+delete:
+  enabled: true
+
+email:
+  from: "docker@registry.fqdn"
+  name: "Portus"
+  reply_to: "reply@registry.fqdn"
+  smtp:
+    enabled: true
+    address: "smtp.yandex.ru"
+    port: 587
+    user_name: "docker@registry.fqdn"
+    password: "mailpassword"
+    domain: "yandex.ru"
